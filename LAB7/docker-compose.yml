@@ -9,7 +9,7 @@ services:
       - "./data:/home/bru"
       - "./passwd:/etc/pure-ftpd/passwd"
     environment:
-      FTP_USER_NAME:  bru
-      FTP_USER_PASS:  1234
-      FRP_USER_HOME:  /home/bru
+      FTP_USER_NAME:  nox01
+      FTP_USER_PASS:  12345
+      FRP_USER_HOME:  /home/nox01
     command: /run.sh pure-ftpd  -l puredb:/etc/pure-ftpd/pureftpd.pdb -E -j -R -P localhost -s -A -j -Z -H -4 -E -R -X -x  

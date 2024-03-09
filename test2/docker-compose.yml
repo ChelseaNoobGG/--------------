@@ -1,0 +1,12 @@
+version: '5'
+
+services:
+  http-server:
+    image: nginx:latest
+    ports:
+      - "8800:80"
+    volumes:
+      - ./www:/usr/share/nginx/html
+
+volumes:
+  www:
